@@ -75,6 +75,11 @@ console.log('Lincoln Town Car');
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
+
+
+// goodbye old solution that uses .sort
+// oop just kidding
+let carModels = [];
 function compare(a,b) {
     if (a.car_model < b.car_model)
       return -1;

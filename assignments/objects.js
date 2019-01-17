@@ -18,27 +18,83 @@ const example = {
 }
 
 // Write your intern objects here:
+const Mitzi = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
 
+const Kennan = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M",
+  speak: function(){
+     return 'Hello my name is Kennan!';
+  }
+}
+
+const Keven = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+
+const Gannie = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+}
+
+const Antonietta = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F",
+  multiplyNums: function(a,b){
+    let sum = a*b;
+    return sum;
+  }
+}
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(Mitzi["name"]);
 
 // Kennan's ID
+console.log(Kennan["id"]);
 
 // Keven's email
+console.log(Keven["email"]);
 
 // Gannie's name
+console.log(Gannie["name"]);
 
 // Antonietta's Gender
+console.log(Antonietta["gender"]);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-// Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
+console.log(Kennan.speak());
+// function speak(who) {
+//   return ("hello, my name is " + who["name"]);
+// }
+// console.log (speak(Kennan));
+
+// Im not sure if this solution is actually what's being asked of me, I can't tell if the use of the term "give Kennan the ability to" means that I should put this in his object or not, so Ill do both just to be safe. But let the record show that the above code does produce the desired outcome. For the rest of the assignment unless told otherwise Ill take "give -- the ability to" literally and assume that Im supposed to put a function directly in the object.
+
+// Antonietta loves math (nerd), give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+console.log(Antonietta.multiplyNums(3,4));
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -48,8 +104,6 @@ const example = {
 // 2. Nest a child object in the parent object with name and age as well.  The name will be George and the age will be 50.
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
-
-const parent = {}
 
 // Log the parent object's name
 
